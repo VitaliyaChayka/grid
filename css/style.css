@@ -140,17 +140,18 @@ body {
   height: 100%;
   background-color: #e2e7ec;
   margin: 0;
-  padding: 40px 240px;
+  padding: 40px 0;
 }
 
 .container__article {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: (1fr)[2];
-      grid-template-rows: repeat(2, 1fr);
+  -ms-grid-rows: 740px, (1fr)[2];
+      grid-template-rows: 740px, repeat(2, 1fr);
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
   gap: 20px;
+  margin: 0 240px;
 }
 
 .text_date-boots {
