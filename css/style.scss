@@ -1,0 +1,126 @@
+            @font-face {
+                font-family: 'font215d663ec607e25b1aac95fe9b0a5e72';
+                src: url('https://nomail.com.ua/files/eot/215d663ec607e25b1aac95fe9b0a5e72.eot?#iefix') format('embedded-opentype'), url('https://nomail.com.ua/files/woff/215d663ec607e25b1aac95fe9b0a5e72.woff') format('woff'), url('https://nomail.com.ua/files/woff2/215d663ec607e25b1aac95fe9b0a5e72.woff2') format('woff2');
+            }
+            
+            @font-face {
+                font-family: 'HansKendrick';
+                src: local('HansKendrick-Regular'), url('https://nomail.com.ua/files/woff/215d663ec607e25b1aac95fe9b0a5e72.woff') format('woff');
+            }
+            
+            body {
+                margin: 0;
+            }
+            
+            * {
+                box-sizing: border-box;
+            }
+            
+            .container {
+                width: 100%;
+                height: auto;
+                margin: 0;
+            }
+            
+            .container__main {
+                margin: 100px;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: 776px, repeat(2, 360px), repeat(3, 580px);
+                gap: 60px;
+            }
+            
+            .container__instagram {
+                display: grid;
+                margin: 0 auto;
+                gap: 0;
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: repeat(2, 1fr);
+            }
+            
+            .image_1 {
+                grid-column-start: span 2;
+                grid-row-start: span 2;
+            }
+            
+            .container__main_item:hover,
+            .container__instagram_item:hover {
+                opacity: 0.5;
+            }
+            
+            .container__article_text {
+                font-family: 'HansKendrick', sans-serif;
+                text-transform: uppercase;
+            }
+            
+            .container__article_item {
+                display: flex;
+                flex-direction: column;
+                max-width: 360px;
+                max-height: 540px;
+            }
+            
+            .container__article_info {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                padding-left: 30px;
+                background-color: #fff;
+            }
+            
+            .photo_author {
+                padding-top: 45px;
+                padding-bottom: 20px;
+            }
+            
+            .text_date {
+                color: #a3a3a3;
+                font-size: 13px;
+                letter-spacing: .25;
+                line-height: 1.2;
+            }
+            
+            .text_title {
+                font-size: 22px;
+                font-weight: 700;
+            }
+            
+            .text_title_h1 {
+                font-size: 30px;
+                color: #fff;
+            }
+            
+            .item_auto {
+                background-image: url(../images/auto.jpg);
+                max-width: 740px;
+                height: 540px;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                padding-left: 40px;
+                grid-column-start: span 2;
+            }
+            
+            .text_date-auto {
+                color: #fff;
+                font-size: 13px;
+            }
+            
+            .main-container {
+                width: 100%;
+                height: 100%;
+                background-color: #e2e7ec;
+                margin: 0;
+                padding: 40px 240px;
+            }
+            
+            .container__article {
+                display: grid;
+                grid-template-rows: repeat(2, 1fr);
+                grid-template-columns: repeat(3, 1fr);
+                gap: 20px;
+            }
+            
+            .text_date-boots {
+                opacity: 0;
+            }
